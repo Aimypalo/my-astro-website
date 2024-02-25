@@ -5,14 +5,41 @@ import Button from '../components/Button.astro';
 
 <Layout title="Section 1">
   <main>
-    <h1><span class="text-gradient">Section 1</span></h1>
-		<p class="instructions">
-			This section describes my achivements during the past year.
-		</p>
+    <h1><span class="text-gradient">Accomplishments & Challenges</span></h1>
+		<div class="instructions">
+			What were your top five accomplishments last year?<br>
+      What didn’t go so well? Why?
+    </div>
 
-    <p class="instructions">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+    <div class="instructions">
+      <p>
+        Over the past year, the Tech Publishing Team made some significant changes to the foundation of our systems. I played a part in this
+        both individually and as part of the team effort. One of my main tasks was tackling the issue of long URLs, where I created a proof of
+        concept for potential solutions like URL compression. This played a crucial role in the decision-making process for these major
+        changes. These decisions involved a new way of storing the book's <code>customisation</code> in the browser's <strong>Local Storage</strong>,
+        where I made a substantial contribution to this effort, particularly in the first half of the year.
+      </p>
+      <p>
+        This was followed by the introduction of the new Formats page in the PDC. Harry led this project, and I've been assisting from the
+        beginning by setting up the page and its layout. Another significant change that followed was the <code>addToCart</code> functionality,
+        which was owned by Harry. We then collaborated as a team on creating and delivering the addons and giftwraps pages in the PDC. These
+        new features demanded a deep understanding of the broader scope of our systems and how they interact with each other. Throughout my
+        collaboration with Harry, I've gained a solid understanding of the PDC application and its evolutionary journey.
+      </p>
+      <p>
+        On a daily basis over the past year, my role also included supporting the freelance Muse devs during the Great Muse Migration process.
+        This task demands a strong understanding of the Muse systems.
+      </p>
+		</div>
+
+    <div class="instructions">
+      <p>
+        Tech Publishing Squad doesn't own PDC anymore?!
+      </p>
+      <p>
+        We took risks by making core system changes in a very tight timeframe, which eventually led to further system refactoring.
+      </p>
+    </div>
 
     <Button
       href="/my-astro-website/"
@@ -47,4 +74,15 @@ import Button from '../components/Button.astro';
 		padding: 1rem;
 		border-radius: 0.4rem;
   }
+  .instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+  .instructions strong {
+		color: rgb(var(--accent));
+	}
 </style>
