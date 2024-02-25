@@ -3,16 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 ---
 
-<Layout title="Section 1">
+<Layout title="Section 4">
   <main>
-    <h1><span class="text-gradient">Section 4</span></h1>
-		<p class="instructions">
-			This section describes my goals for the next year.
-		</p>
+    <h1><span class="text-gradient">Focus: Next year goals</span></h1>
+		<div class="instructions">
+			What are your goals for your career over the next 12 months?
+    </div>
 
-    <p class="instructions">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+    <div class="instructions">
+			<p>
+        <strong>1.</strong> Muse Tooling improvements.
+      </p>
+		</div>
 
     <Button
       href="/my-astro-website/"
@@ -47,4 +49,7 @@ import Button from '../components/Button.astro';
 		padding: 1rem;
 		border-radius: 0.4rem;
   }
+  .instructions strong {
+		color: rgb(var(--accent));
+	}
 </style>
