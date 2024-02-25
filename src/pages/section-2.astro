@@ -6,11 +6,27 @@ import Button from '../components/Button.astro';
 <Layout title="Section 2">
   <main>
     <h1><span class="text-gradient">Development areas</span></h1>
-		<p class="instructions">What areas do you want to focus on developing over the next year?</p>
+		<div class="instructions">What areas do you want to focus on developing over the next year?</div>
 
-    <p class="instructions">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+    <div class="instructions">
+      <p>
+			  <strong>1.</strong> Use the experience from the past year's challeges to make recommendations that can communicate effectively the risks and benefits
+        of potential technical complications to the rest of the business.
+      </p>
+      <p>
+        <strong>2.</strong> What happens behind the scenes? What lies behind the whole creation process of a book? Who does all the magic that converts the code
+        into these beautiful book pages? This is how I have always seen the mu2 renderer and I'm willing to find out more about it, by contributing
+        in any way, either by writing code or not. I believe that so far I had the opportunity to take on a diverse range of projects and
+        technologies offering me a broad knowledge base. This has its own risks as a non-specialised engineer but at the same time it's
+        inspiring and it offeres a diverse set of skills.
+
+        What happens behind the scenes? What lies behind the entire creation process of a book? Who performs the magic that transforms the code
+        into these beautiful book pages? This is how I've always perceived the mu2 renderer, and I'm eager to learn more about it by contributing
+        in any way, whether it's writing code or not. I believe that so far I had the opportunity to take on a diverse range of projects and
+        technologies, which has provided me with a broad knowledge base. While being a non-specialized engineer carries its own risks, it's also
+        inspiring and provides a diverse set of skills.
+      </p>
+		</div>
 
     <Button
       href="/my-astro-website/"
@@ -45,4 +61,7 @@ import Button from '../components/Button.astro';
 		padding: 1rem;
 		border-radius: 0.4rem;
   }
+  .instructions strong {
+		color: rgb(var(--accent));
+	}
 </style>
