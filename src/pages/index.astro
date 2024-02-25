@@ -5,31 +5,31 @@ import Card from '../components/Card.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Welcome to <span class="text-gradient">Aimy's Annual Review 2024</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			How did the last year go and what paths am I going to to explore in the future?<br />
+			<strong>Enjoy reading!</strong>
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="/section-1"
+				title="Section 1"
+				body="Past year achivements."
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+        href="/section-2"
+				title="Section 2"
+				body="How do I see myself in the future?"
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+        href="/section-3"
+				title="Section 3"
+				body="What kind of learning do I expect to receive?"
 			/>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+        href="/section-4"
+				title="Section 4"
+				body="What are my goals for the next year?"
 			/>
 		</ul>
 	</main>
@@ -57,7 +57,7 @@ import Card from '../components/Card.astro';
 		line-height: 1.6;
 		margin: 1rem 0;
 		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
+		background-color: #444;
 		padding: 1rem;
 		border-radius: 0.4rem;
 	}

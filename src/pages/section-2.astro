@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout title="Section 2">
+  <main>
+    <h1><span class="text-gradient">Section 2</span></h1>
+		<p class="instructions">
+			This section describes how I see myself in the future.</p>
+
+    <p class="instructions">
+			1. Engineers have a wide range of options on the choice of a company they would like to work for. All types of business need software engineers and developers nowadays. Having spent
+      15 years in art education and art jobs I have formed a certain type of mindset and I'm looking for a diverse environment to work in. I'd never apply for a job in a fintech company nor a real estate for example.
+      I like working at Wonderbly because it's creative, innovative and progressive I could learn a lot about how to build shinny websites efficiently and perhaps this would offer me great future opportunities to move
+      flexibly in the market. But the truth is that what keeps me in Wonderbly is the diversity the company offers, the product itself, we are making books! The beautiful illustrations the art and love that everyone puts
+      in The meaningful stories and finally the innovative technology that materialises these concepts and puts everything together to produce this unique product Using technology to create a better world and not just money
+      has been the idea that kept me at Wonderbly for all these years. For these reasons I'd like to focus on innovative projects that can offer me the chance to improve my technical knowledge and most importantly keep me inspired.
+      I think I'm less interested in building or maintaining websites but I'm more enthusiast about get some deeper learning about our custom and innovative core systems that do all the visual magic. i believe that at this point of my
+      career as a software developer I'd like to choose to be involved in more creative projects rather than becoming a React expert, accepting the fact that I have a bit of a different mindset and I find inspiration in different things than most engineers do.
+		</p>
+
+    <Button
+      href="/"
+      title="&larr; Home"
+    />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: #444;
+		padding: 1rem;
+		border-radius: 0.4rem;
+  }
+</style>
