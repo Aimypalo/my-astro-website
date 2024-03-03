@@ -6,7 +6,9 @@ import Button from '../components/Button.astro';
 <Layout title="Section 3">
   <main>
     <h1><span class="text-gradient">Learning</span></h1>
-		<div class="instructions">What kind of learning do you expect to receive?</div>
+		<div class="instructions">
+      <strong>What kind of learning do you expect to receive?</strong>
+    </div>
 
     <div class="instructions">
       <p>
@@ -24,8 +26,8 @@ import Button from '../components/Button.astro';
       </p>
       <p>
         For these reasons, I'd like to focus on innovative projects that can help me enhance my technical knowledge and, most importantly,
-        keep me feeling inspired. I'm not as interested in building or maintaining websites; instead, I'm enthusiastic about delving deeper
-        into our custom and innovative core systems that work their visual magic. At this stage of my career as a software developer, I'd
+        keep me feeling inspired. I'm not as interested in building or maintaining websites; instead, I'm enthusiastic about going deeper
+        into our custom and innovative core systems that do the visual magic. At this stage of my career as a software developer, I'd
         prefer to be involved in more creative projects rather than becoming a React expert. I recognize that my mindset is a bit different,
         and I find inspiration in things that might not resonate with most engineers.
       </p>
@@ -64,4 +66,7 @@ import Button from '../components/Button.astro';
 		padding: 1rem;
 		border-radius: 0.4rem;
   }
+  .instructions strong {
+		color: rgb(var(--accent));
+	}
 </style>
