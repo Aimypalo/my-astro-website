@@ -7,12 +7,40 @@ import Button from '../components/Button.astro';
   <main>
     <h1><span class="text-gradient">Focus: Next year goals</span></h1>
 		<div class="instructions">
-			What are your goals for your career over the next 12 months?
+			<strong>What are your goals for your career over the next 12 months?</strong>
     </div>
 
     <div class="instructions">
 			<p>
-        <strong>1.</strong> Muse Tooling improvements.
+        <strong>1.</strong> Improvements in Muse tooling and processes: Muse products require a bit more attention. Unfortunately,
+        Muse products often become the playground for junior developers to learn and improve their skills while these products are being built.
+        Perhaps the value of this process was higher in the past when books were simpler. In the new world of Avatars 3.0 and the Product Driven
+        Canvas, I can see two main areas where the complexity has significantly increased.
+        <ul>
+          <li>Internally: Avatars 3.0 introduces a new customization that is very different from the old one, resulting in significant inconsistencies
+            between books and frequent incompatibility with PDC.</li>
+          <li>Various system compatibility: A PDC book requires Muse developers to have a broader understanding of how Muse, Prismic, and PDC
+            interact with each other. However, our freelance Muse developers have limited visibility, which makes them highly dependent on the
+            members of the Tech Publishing Team.
+        </ul>
+        <p>
+          One of the benefits of the GMM is the consistency among all products. Migrating products to MPR is the first step. However, this alone
+          is not sufficient to address the issues of customization differences and incompatibility with PDC. Perhaps we could reassess the GMM
+          process and break it down into 2-3 steps. This would allow us to have better control over the code changes and avoid massive PRs. A clearer
+          scope of what the product requires before the migration to PDC begins could save us time by helping developers anticipate core structural
+          problems in the book.
+        </p>
+        <p>
+          Migrating all products to MPR first (independently from PDC) is a relatively quick process, which can facilitate larger system upgrades,
+          such as Node updates, without interrupting the GMM process. Once all books reach a point where they are using the same muse-common major
+          version (at least v3.0.0), perhaps we will be in a good position to start considering bulk updates.
+        </p>
+      </p>
+      <p>
+        <strong>2.</strong> Allocate more time to long-term projects and reduce the time spent on bug fixes.
+      </p>
+      <p>
+        <strong>3.</strong> Areas described in the <a href="/my-astro-website/section-3"><strong>Learning</strong></a> section.
       </p>
 		</div>
 
